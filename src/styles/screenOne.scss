@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'schabo';
+    src: url('/font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sc-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+.ipad {
+    position: absolute;
+    z-index: 2;
+    width: 700px;
+    overflow: hidden;
+}
+
+.ipad > img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+}
+
+.ipad-text-one,
+.ipad-text-two {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'schabo';
+}
+
+.ipad-text-one {
+    font-size: 9rem;
+    z-index: 9;
+    width: 600px;
+    top: 4rem;
+    height: 10rem;
+    
+   
+    
+  
+}
+
+.ipad-text-two {
+    font-size: 15rem;
+    z-index: 5;
+    width: 620px;
+    top: 150px;
+    
+    
+   
+  
+}
+
+/* Animation for each letter */
+.letter {
+  
+    transform: translateY(100%);
+    animation: slideUp 0.5s forwards;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+.letter-one{
+ 
+    transform: translateY(100%);
+    animation: slideUp 2s forwards;
+    animation-delay: calc(var(--i) * 0.3s);
+  
+}
+
+
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0%);
+        opacity: 1;   
+    }
+}
+
+/* Additional styles to set custom properties */
+.ipad-text-one .letter,
+.ipad-text-two .letter {
+    --i: 0;
+}
+
+.ipad-text-one .letter:nth-child(1) { --i: 1; }
+.ipad-text-one .letter:nth-child(2) { --i: 2; }
+.ipad-text-one .letter:nth-child(3) { --i: 3; }
+.ipad-text-one .letter:nth-child(4) { --i: 4; }
+.ipad-text-one .letter:nth-child(5) { --i: 5; }
+.ipad-text-one .letter:nth-child(6) { --i: 6; }
+.ipad-text-one .letter:nth-child(7) { --i: 7; }
+.ipad-text-one .letter:nth-child(8) { --i: 8; }
+.ipad-text-one .letter:nth-child(9) { --i: 9; }
+.ipad-text-one .letter:nth-child(10) { --i: 10; }
+.ipad-text-one .letter:nth-child(11) { --i: 11; }
+/* Continue for all letters */
+
+.ipad-text-two .letter-one:nth-child(1) { --i: 1; }
+.ipad-text-two .letter-one:nth-child(2) { --i: 2; }
+.ipad-text-two .letter-one:nth-child(3) { --i: 3; }
+.ipad-text-two .letter-one:nth-child(4) { --i: 4; }
+.ipad-text-two .letter-one:nth-child(5) { --i: 5; }
+.ipad-text-two .letter-one:nth-child(6) { --i: 6; }
+.ipad-text-two .letter-one:nth-child(7) { --i: 7; }
+/* Continue for all letters */
+
+
+.screen-container {
+    transition: opacity 0.5s ease-in-out; /* Adjust duration to match the setTimeout */
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .screen-one, .screen-two {
+    opacity: 1;
+  }
+  

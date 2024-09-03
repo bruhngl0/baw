@@ -1,0 +1,52 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.large-group{
+   
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+
+    >span{
+        font-size: 2.4rem;
+        color: gray;
+        font-weight: 600;
+        border-bottom: 1px solid white;
+
+    }
+}
+
+.small-group{
+    margin-top: 2rem;
+    
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+
+    >span{
+        font-size: 12px;
+        padding-top:4px ;
+        padding-bottom:4px; 
+        color: rgb(252, 252, 252);
+        font-weight: 600;
+        border-bottom: 1px solid white;
+    }
+}
+
+
+.policy{
+    margin-top: 2rem;
+}
+
+.des-1{
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.des-2{
+font-size: 12px;
+}

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'schabo';
+    src: url('/font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+  .screen-Four-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.screen-Four{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ 
+ 
+    
+    >p{
+       font-size: 16rem;
+       font-family: schabo;
+       
+    }
+
+    >img{
+        margin-left: 4rem;
+        width: 10rem;
+        padding-bottom: 8rem;
+        
+    }
+
+  
+}
+
+
+.btn-four{
+    position: absolute;
+    top:33rem;
+    border-radius: none;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotateZ(0deg); /* Start at 0 degrees */
+    }
+    to {
+      transform: rotateZ(360deg); /* Rotate to 360 degrees */
+    }
+  }

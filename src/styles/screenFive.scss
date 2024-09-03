@@ -1,0 +1,157 @@
+
+@font-face {
+    font-family: 'schabo';
+    src: url('/font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+.main-five{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: schabo;
+}
+
+
+
+.grid-main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 60vw;
+    height: 70vh;    
+}
+
+.grid-row-one{
+    display: flex;
+    flex-direction: row;
+    height: 14vh;
+    border: 0.5px solid rgb(91, 91, 91);
+    width: 100%;
+    }
+
+
+
+.grid-row-two{
+    display: flex;
+    flex-direction: row;
+    height: 14vh;
+    border: 0.5px solid rgb(91, 91, 91);
+    width: 100%;
+
+}
+.grid-row-three{
+    display: flex;
+    flex-direction: row;
+    height: 14vh;
+    border: 0.5px solid rgb(91, 91, 91);
+    width: 100%;
+
+}
+.grid-row-four{
+    display: flex;
+    flex-direction: row;
+    height: 14vh;
+    border: 0.5px solid rgb(91, 91, 91);
+    width: 100%;
+
+}
+.grid-row-five{
+    display: flex;
+    flex-direction: row;
+    height: 14vh;
+    border: 0.5px solid rgb(91, 91, 91);
+    width: 100%;
+
+}
+
+
+.grid-col-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.33%;
+    border: 0.5px solid rgb(91, 91, 91);
+}
+
+
+.grid-col-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.33%;
+    border: 0.5px solid rgb(91, 91, 91);
+}
+
+.grid-col-three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.33%;
+    border: 0.5px solid rgb(91, 91, 91);
+}
+
+
+.logos{
+    height: 30%;
+    
+}
+
+.logos-nvdia{
+    
+    width: 30%;
+     padding: 20px;
+}
+
+.logos-coca{
+   height: 40%;
+}
+
+.logos-circle{
+    
+    height: 80%;
+     padding: 40px;
+}
+
+.logos-fastrack{
+    height: 70%;
+}
+
+.logos-circle-one{
+    height: 80%;
+}
+
+.logos-fastrack-one{
+    height: 70%;
+    width: 55%;  
+}
+
+
+.logos-hc{
+    height: 70%;
+}
+
+.logos-sq{
+    height: 40%;
+}
+
+.logos-ho{
+    height: 50%;
+}
+
+.logos-sh{
+    height: 50%;
+}
+
+.logos-kr{
+    height: 70%;
+}

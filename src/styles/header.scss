@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'schabo';
+    src: url('/font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100vw;
+    z-index: 77;
+
+    >nav a{
+        margin: 10px;
+        font-size: 30px;
+        font-family: "schabo";
+        font-weight: 30rem;
+        color: white;
+    }
+}
