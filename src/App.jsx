@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
 import ScreenOne from './components/ScreenOne';
@@ -8,8 +9,9 @@ import ScreenFour from './components/ScreenFour';
 import ScreenFive from './components/ScreenFive';
 import ScreenSix from './components/ScreenSix';
 import Footer from './components/Footer';
-import Layout from './components/Layout';
 import MainLayout from './components/MainLayout';
+import Scroll from './components/Scroll';
+import ClientOne from './components/ClientOne';
 
 import '../src/styles/screenTwo.scss';
 import '../src/styles/header.scss';
@@ -23,48 +25,26 @@ import '../src/styles/layout.scss';
 import '../src/styles/mainLayout.scss'
 
 function App() {
-  const [currentScreen, setCurrentScreen] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  
-  const screens = [ScreenOne, ScreenSix, ScreenThree, ScreenFour, ScreenFive, MainLayout];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const screenHeight = window.innerHeight;
-      const scrollPosition = window.scrollY;
-      const newScreenIndex = Math.floor(scrollPosition / screenHeight);
-
-      if (newScreenIndex !== currentScreen && newScreenIndex < screens.length) {
-        setIsTransitioning(true);
-        setTimeout(() => {
-          setCurrentScreen(newScreenIndex);
-          setIsTransitioning(false);
-        }, 500); // Adjust transition timing as needed
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [currentScreen, screens.length]);
-
-  const CurrentScreenComponent = screens[currentScreen];
-
   return (
-    <>
-      <Header />
-      <div className={`screen-container ${isTransitioning ? 'fade-out' : ''}`}>
-        <CurrentScreenComponent />
-      </div>
-      {/* Create scrollable space */}
-      {Array(screens.length).fill().map((_, index) => (
-        <div key={index} style={{ height: '110vh' }}></div>
-      ))}
-  
-    </>
+    <Router>
+    
+      <Routes>
+        <Route path="/" element={<Scroll />} />
+        <Route path="/clients" element={<ClientOne />} />
+        <Route path="/screen-three" element={<ScreenThree />} />
+        <Route path="/screen-four" element={<ScreenFour />} />
+        <Route path="/screen-five" element={<ScreenFive />} />
+        <Route path="/screen-six" element={<ScreenSix />} />
+        <Route path="/main-layout" element={<MainLayout />} />
+        <Route path="/item/:1" element={<ClientOne />} />
+      </Routes>
+    
+    </Router>
   );
 }
 
 export default App;
+
 
 
 

@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family: 'schabo';
+    src: url('/font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+      .client-one{
+        margin-top: 0rem;
+        padding-left: 1rem;
+        font-family:  Helvetica, sans-serif;
+
+      }
+
+      .client-one-heading{
+           font-size: 5rem;
+      }
+
+
+      .client-one-des{
+        font-size: 1rem;
+
+      }
+
+      .client-one-para{
+        font-size: 1rem;
+      }
+
+
+      .client-one-year{
+        font-size: 7rem
+      }
+
+
+    .back{
+        font-size: 3rem;
+    }
