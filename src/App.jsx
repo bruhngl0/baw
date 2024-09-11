@@ -12,6 +12,18 @@ import Footer from './components/Footer';
 import MainLayout from './components/MainLayout';
 import Scroll from './components/Scroll';
 import ClientOne from './components/ClientOne';
+import ClientTwo from './components/ClientTwo';
+import ClientThree from './components/ClientThree';
+import ClientFour from './components/ClientFour';
+import ClientFive from './components/ClientFive';
+import ClientSix from './components/ClientSix';
+import ClientSeven from './components/ClientSeven';
+import ScreenSixInt from './components/ScreenSixInt';
+import Services from './components/Services';
+import AnimatedServices from './components/AnimateServices';
+import ClientLayout from './components/ClientLayout';
+
+
 
 import '../src/styles/screenTwo.scss';
 import '../src/styles/header.scss';
@@ -23,20 +35,33 @@ import '../src/styles/screenFive.scss';
 import '../src/styles/screensix.scss';
 import '../src/styles/layout.scss';
 import '../src/styles/mainLayout.scss'
+import '../src/styles/services.scss'
+import '../src/styles/ani.scss'
 
 function App() {
   return (
     <Router>
-    
+ 
       <Routes>
         <Route path="/" element={<Scroll />} />
-        <Route path="/clients" element={<ClientOne />} />
+      
         <Route path="/screen-three" element={<ScreenThree />} />
         <Route path="/screen-four" element={<ScreenFour />} />
         <Route path="/screen-five" element={<ScreenFive />} />
         <Route path="/screen-six" element={<ScreenSix />} />
         <Route path="/main-layout" element={<MainLayout />} />
-        <Route path="/item/:1" element={<ClientOne />} />
+        <Route path="/clients" element={<ScreenFive/>} />
+        <Route path="/client-one" element={<ClientLayout />} />
+        <Route path="/client-two" element={<ClientTwo />} />
+        <Route path="/client-three" element={<ClientThree />} />
+        <Route path="/client-four" element={<ClientFour />} />
+        <Route path="/client-five" element={<ClientFive />} />
+        <Route path="/client-six" element={<ClientSix />} />
+        <Route path="/client-seven" element={<ClientSeven />} />
+        <Route path= "/screen-six-int" element={<ScreenSixInt/>} />
+        <Route path= "/servicess" element={<Services/>} />   
+        <Route path= "/textscroll" element = {<AnimatedServices/>} /> 
+           
       </Routes>
     
     </Router>

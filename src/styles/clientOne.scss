@@ -7,9 +7,19 @@
   }
 
       .client-one{
-        margin-top: 0rem;
-        padding-left: 1rem;
+        margin: 0 auto;
+        padding-left: 2ch;
         font-family:  Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        margin-top: 1rem;
+        
+     
 
       }
 

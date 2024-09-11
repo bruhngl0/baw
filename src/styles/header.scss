@@ -10,13 +10,17 @@
 
 .header{
     position: fixed;
+    top: 0; /* Align it at the top */
+    left: 0; /* Start from the left of the screen */
+    width: 100%; /* Take full width of the screen */
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    width: 100vw;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically within the header */
+    padding: 20px 0; /* Add padding instead of margin for spacing */
+  
     z-index: 77;
+  
 
     >nav a{
         margin: 10px;

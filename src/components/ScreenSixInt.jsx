@@ -5,7 +5,7 @@ import ClientOne from './ClientOne';
 import { Link } from 'react-router-dom';
 
 
-const ScreenSix = () => {
+const ScreenSixInt = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const items = [
       { color: 'green', text: 'Item 1', content: 'Detailed info about Item 1', id: 1, route: '/client-one' },
@@ -42,11 +42,13 @@ const ScreenSix = () => {
           
           ))}
         </div>
-       
+        <Link to = "/">
+      <p className='back'>home</p>
+      </Link> 
       </div>
     </div>
 
   );
 };
 
-export default ScreenSix;
+export default ScreenSixInt;

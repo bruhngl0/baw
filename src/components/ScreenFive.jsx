@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ScreenFive = ({onClick}) => {
   return (
+   <>
     <div className='main-five' onClick={onClick}>
       <h1>CLIENTS</h1>
       <div className='grid-main-box'>
@@ -66,9 +68,13 @@ const ScreenFive = ({onClick}) => {
             <img src= "logo15.png"  className='logos-hc'/>
             </div>
          </div>
-
+       
       </div>
     </div>
+       <Link to = "/">
+       <p className=''>BACK</p>
+      </Link> 
+      </>
   )
 }
 
