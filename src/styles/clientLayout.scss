@@ -1,4 +1,15 @@
 /* HolyKicks.css */
+
+@font-face {
+  font-family: 'ultra';
+  src: url('/ultra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 @keyframes slideUp {
     from {
       transform: translateY(80%); /* Start the text lower to avoid overlap */
@@ -17,6 +28,8 @@
     animation: slideUp 0.5s ease-in-out forwards;
     animation-fill-mode: forwards;
     margin-bottom: 0.5rem; /* Add some space between lines */
+    font-family: "ultra";
+    font-size: 100px;
   }
   
   /* Larger text elements like "BRANDING" and "BACK" should animate as a block */
@@ -26,6 +39,16 @@
     animation: slideUp 0.5s ease-in-out forwards;
     animation-fill-mode: forwards;
     margin-bottom: 1rem; /* Add more space between larger elements */
+  }
+
+  .slide-up-down{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .slide-up .late-animation{
+    color: white;
+    font-family: "Helvetica";
   }
   
   /* Add a delay for each word */

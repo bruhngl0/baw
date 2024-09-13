@@ -5,10 +5,10 @@ const Header = () => {
     <header className='header'>
         <nav className='header-nav'>
             <a href="/">TEAM</a>
-            <a href="/clients">CLIENTS</a>
+            <a href="/screen-six-int">CLIENTS</a>
             <a href="/baw-studio">BAW STUDIO</a>
             <a href="/servicess">SERVICES</a>
-            <a href="/call-up">CALL UP</a>
+            <a href="/screen-five">CALL UP</a>
         </nav>
     </header>
   );

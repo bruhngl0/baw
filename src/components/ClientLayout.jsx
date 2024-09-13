@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/clientLayout.scss'
+import { Link } from 'react-router-dom';
 
 const ClientLayout = () => {
   return (
@@ -15,7 +16,9 @@ const ClientLayout = () => {
       </div>
       <div style={styles.yearSection}>
         <h1 className="slide-up late-animation" style={styles.year}>2019</h1>
+        <Link to= "/screen-six">
         <p className="slide-up late-animation" style={styles.backText}>BACK</p>
+        </Link>
       </div>
     </div>
   );

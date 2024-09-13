@@ -5,7 +5,7 @@ const ScreenFive = ({onClick}) => {
   return (
    <>
     <div className='main-five' onClick={onClick}>
-      <h1>CLIENTS</h1>
+
       <div className='grid-main-box'>
          <div className='grid-row-one'>
             <div className='grid-col-one'>
@@ -71,9 +71,7 @@ const ScreenFive = ({onClick}) => {
        
       </div>
     </div>
-       <Link to = "/">
-       <p className=''>BACK</p>
-      </Link> 
+      
       </>
   )
 }

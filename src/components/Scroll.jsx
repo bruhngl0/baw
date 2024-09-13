@@ -10,6 +10,7 @@ import ScreenSix from './ScreenSix';
 import Footer from './Footer';
 import Layout from './Layout';
 import MainLayout from './MainLayout';
+import Baw from './Baw';
 
 
 
@@ -17,7 +18,7 @@ function Scroll() {
   const [currentScreen, setCurrentScreen] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   
-  const screens = [ScreenOne, ScreenSix, ScreenThree, ScreenFour, MainLayout];
+  const screens = [ScreenOne, ScreenSix, ScreenThree, ScreenFive];
 
   useEffect(() => {
     const handleScroll = () => {

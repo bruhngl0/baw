@@ -22,6 +22,7 @@ import ScreenSixInt from './components/ScreenSixInt';
 import Services from './components/Services';
 import AnimatedServices from './components/AnimateServices';
 import ClientLayout from './components/ClientLayout';
+import Baw from './components/Baw';
 
 
 
@@ -38,6 +39,7 @@ import '../src/styles/mainLayout.scss'
 import '../src/styles/services.scss'
 import '../src/styles/ani.scss'
 
+
 function App() {
   return (
     <Router>
@@ -51,7 +53,7 @@ function App() {
         <Route path="/screen-six" element={<ScreenSix />} />
         <Route path="/main-layout" element={<MainLayout />} />
         <Route path="/clients" element={<ScreenFive/>} />
-        <Route path="/client-one" element={<ClientLayout />} />
+        <Route path="/client-one" element={<ClientOne />} />
         <Route path="/client-two" element={<ClientTwo />} />
         <Route path="/client-three" element={<ClientThree />} />
         <Route path="/client-four" element={<ClientFour />} />
@@ -61,6 +63,7 @@ function App() {
         <Route path= "/screen-six-int" element={<ScreenSixInt/>} />
         <Route path= "/servicess" element={<Services/>} />   
         <Route path= "/textscroll" element = {<AnimatedServices/>} /> 
+        <Route path= "/baw" element = {<Baw/>} /> 
            
       </Routes>
     

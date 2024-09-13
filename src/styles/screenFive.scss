@@ -24,17 +24,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    width: 60vw;
-    height: 70vh;    
+    margin: 2px;
+    width: 50vw;
+    height: 60vh;  
+    margin-top: 3rem;  
 }
 
 .grid-row-one{
     display: flex;
     flex-direction: row;
     height: 14vh;
-    border: 0.5px solid rgb(91, 91, 91);
+  
     width: 100%;
+    margin: 2px;
     }
 
 
@@ -43,32 +45,36 @@
     display: flex;
     flex-direction: row;
     height: 14vh;
-    border: 0.5px solid rgb(91, 91, 91);
+
     width: 100%;
+    margin: 2px;
 
 }
 .grid-row-three{
     display: flex;
     flex-direction: row;
     height: 14vh;
-    border: 0.5px solid rgb(91, 91, 91);
+    
     width: 100%;
+    margin: 2px;
 
 }
 .grid-row-four{
     display: flex;
     flex-direction: row;
     height: 14vh;
-    border: 0.5px solid rgb(91, 91, 91);
+   
     width: 100%;
+    margin: 2px;
 
 }
 .grid-row-five{
     display: flex;
     flex-direction: row;
     height: 14vh;
-    border: 0.5px solid rgb(91, 91, 91);
+    
     width: 100%;
+    margin: 2px;
 
 }
 
@@ -79,7 +85,9 @@
     align-items: center;
     height: 100%;
     width: 33.33%;
-    border: 0.5px solid rgb(91, 91, 91);
+    border: 0.1px solid rgb(91, 91, 91);
+    margin-right: 2px;
+    
 }
 
 
@@ -89,7 +97,8 @@
     align-items: center;
     height: 100%;
     width: 33.33%;
-    border: 0.5px solid rgb(91, 91, 91);
+    border: 0.1px solid rgb(91, 91, 91);
+    margin-right: 2px;
 }
 
 .grid-col-three{
@@ -98,61 +107,61 @@
     align-items: center;
     height: 100%;
     width: 33.33%;
-    border: 0.5px solid rgb(91, 91, 91);
+    border: 0.1px solid rgb(91, 91, 91);
+  
 }
 
 
 .logos{
-    height: 30%;
+    height: 20%;
     
 }
 
 .logos-nvdia{
     
-    width: 30%;
-     padding: 20px;
+    height: 40%;
 }
 
 .logos-coca{
-   height: 40%;
+   height: 30%;
 }
 
 .logos-circle{
     
-    height: 80%;
-     padding: 40px;
+    height: 50%;
+  
 }
 
 .logos-fastrack{
-    height: 70%;
+    height: 40%;
 }
 
 .logos-circle-one{
-    height: 80%;
+    height: 50%;
 }
 
 .logos-fastrack-one{
-    height: 70%;
-    width: 55%;  
+    height: 40%;
+    
 }
 
 
 .logos-hc{
-    height: 70%;
+    height: 60%;
 }
 
 .logos-sq{
-    height: 40%;
+    height: 30%;
 }
 
 .logos-ho{
-    height: 50%;
+    height: 40%;
 }
 
 .logos-sh{
-    height: 50%;
+    height: 40%;
 }
 
 .logos-kr{
-    height: 70%;
+    height: 50%;
 }
