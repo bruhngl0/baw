@@ -23,6 +23,8 @@ import Services from './components/Services';
 import AnimatedServices from './components/AnimateServices';
 import ClientLayout from './components/ClientLayout';
 import Baw from './components/Baw';
+import MaskAnimation from './components/MaskAnimation';
+import Sliding from './components/Sliding';
 
 
 
@@ -64,6 +66,9 @@ function App() {
         <Route path= "/servicess" element={<Services/>} />   
         <Route path= "/textscroll" element = {<AnimatedServices/>} /> 
         <Route path= "/baw" element = {<Baw/>} /> 
+        <Route path= '/mask' element = {<MaskAnimation/>} />
+        <Route path= '/masking' element = {<Sliding/>} />
+        
            
       </Routes>
     

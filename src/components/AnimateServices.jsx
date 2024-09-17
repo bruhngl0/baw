@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-
+import "../styles/ani.scss"
 
 
 const AnimatedServices= () => {

@@ -1,48 +1,74 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/baw.scss'
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import newsImage from '../../public/news.png';
 
 const Baw = () => {
-  const [activeDiv, setActiveDiv] = useState(0);
+  const containerRef = useRef(null);
+ 
+  const imageSrc = newsImage;
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveDiv((prev) => (prev + 1) % 5); // 0-4, where 0 is the initial state
-    }, 2000); // Change every 2 seconds
+  const zoomPoints = [
+    { x: -500, y: -300, zoom: 2 },
+    { x: -500, y: 300, zoom: 2 },
+    { x: 300, y: 200, zoom: 2 },
+    { x: 300, y: -300, zoom: 2 },
+  ];
 
-    return () => clearInterval(interval);
-  }, []);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
 
-  const getTransform = () => {
-    switch (activeDiv) {
-      case 1: return 'scale(1.2) translate(25%, 0%)';
-      case 2: return 'scale(1.2) translate(-25%, 25%)';
-      case 3: return 'scale(1.2) translate(25%, -25%)';
-      case 4: return 'scale(1.2) translate(-25%, -25%)';
-      default: return 'scale(1) translate(0, 0)';
-    }
-  };
+  const numPoints = zoomPoints.length;
+  const scrollInput = [0];
+  const scaleOutput = [1];
+  const xOutput = [0];
+  const yOutput = [0];
+
+  zoomPoints.forEach((point, index) => {
+    const startProgress = (index + 0.5) / numPoints;
+    const endProgress = (index + 1) / numPoints;
+
+    scrollInput.push(startProgress, endProgress);
+    scaleOutput.push(point.zoom, 1);
+    xOutput.push(-point.x * (point.zoom - 1), 0);
+    yOutput.push(-point.y * (point.zoom - 1), 0);
+  });
+
+  const scale = useTransform(scrollYProgress, scrollInput, scaleOutput);
+  const x = useTransform(scrollYProgress, scrollInput, xOutput);
+  const y = useTransform(scrollYProgress, scrollInput, yOutput);
 
   return (
-    <div className="animated-grid">
-      <img 
-        src= "news.png" 
-        alt="Background" 
-        className="background-image" 
-        style={{ transform: getTransform() }} // Apply the same transform to the image
-      />
-      <div 
-        className="grid-container" 
-        style={{ transform: getTransform() }} // Apply the same transform to the grid container
+    <div ref={containerRef} style={{ height: '800vh', overflow: 'hidden' }}>
+      <motion.div
+        style={{
+          width: '100vw',
+          height: '100vh',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          overflow: 'hidden',
+          marginTop: "5rem",
+          marginLeft: "17rem"
+        }}
       >
-        <div className="grid-item" style={{ top: '40%', left: '10%' }}></div>
-        <div className="grid-item" style={{ top: '0%', right: '10%' }}></div>
-        <div className="grid-item" style={{ bottom: '10%', left: '10%' }}></div>
-        <div className="grid-item" style={{ bottom: '10%', right: '10%' }}></div>
-      </div>
+        <motion.img
+          src={imageSrc}
+          alt="Zoomable Image"
+          style={{
+            width: '70%',
+            height: '100%',
+            objectFit: 'cover',
+            scale,
+            x,
+            y
+          }}
+        />
+      </motion.div>
     </div>
   );
 };
 
 export default Baw;
-
 

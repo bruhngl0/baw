@@ -1,17 +1,18 @@
 import React from 'react';
-
+import bawlogo from "../../public/logobaw.png"
+import "../styles/sliding.scss"
 
 const Sliding = () => {
   return (
-    <div id='rssBlock'>
-      <p className="cnnContents">
-        <span className="marqueeStyle">
-          &nbsp;continuous infinite text loop 1 continuous infinite text loop 2&nbsp;
-        </span>
-        <span className="marqueeStyle2">
-          &nbsp;continuous infinite text loop 3 continuous infinite text loop 4&nbsp;
-        </span>
-      </p>
+    <div className="baw-mains">
+      <div className="wrapper-baw">
+        <div className="container-baw">
+          <img
+            src= {bawlogo}
+            alt="example"
+          />
+        </div>
+      </div>
     </div>
   );
 };

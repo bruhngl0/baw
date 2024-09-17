@@ -7,7 +7,7 @@ const Header = () => {
             <a href="/">TEAM</a>
             <a href="/screen-six-int">CLIENTS</a>
             <a href="/baw-studio">BAW STUDIO</a>
-            <a href="/servicess">SERVICES</a>
+            <a href="/servicess">ARSENAL</a>
             <a href="/screen-five">CALL UP</a>
         </nav>
     </header>

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const ScreenSixInt = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const items = [
-      { color: 'green', text: 'Item 1', content: 'Detailed info about Item 1', id: 1, route: '/client-one' },
+      { color: 'green', bg: 'Item 1', content: 'Detailed info about Item 1', id: 1, route: '/client-one' },
       { color: 'red', text: 'Item 2', content: 'Detailed info about Item 2', id: 2, route: '/client-two' },
       { color: 'blue', text: 'Item 3', content: 'Detailed info about Item 3', id: 3, route: '/client-three' },
       { color: 'gray', text: 'Item 4', content: 'Detailed info about Item 4', id: 4, route: '/client-four' },
@@ -43,7 +43,7 @@ const ScreenSixInt = () => {
           ))}
         </div>
         <Link to = "/">
-      <p className='back'>home</p>
+      <p className='back'>⇦</p>
       </Link> 
       </div>
     </div>

@@ -11,6 +11,8 @@ import Footer from './Footer';
 import Layout from './Layout';
 import MainLayout from './MainLayout';
 import Baw from './Baw';
+import Services from './Services';
+import MaskAnimation from './MaskAnimation';
 
 
 
@@ -18,7 +20,7 @@ function Scroll() {
   const [currentScreen, setCurrentScreen] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   
-  const screens = [ScreenOne, ScreenSix, ScreenThree, ScreenFive];
+  const screens = [ScreenOne, MaskAnimation, ScreenSix, ScreenFive];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +51,7 @@ function Scroll() {
       </div>
       {/* Create scrollable space */}
       {Array(screens.length).fill().map((_, index) => (
-        <div key={index} style={{ height: '110vh' }}></div>
+        <div key={index} style={{ height: '105vh' }}></div>
       ))}
   
     </>

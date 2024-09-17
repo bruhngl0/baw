@@ -24,6 +24,7 @@
     justify-content: space-between;
     height: 500px;
     position: relative;
+    
   }
   
   .grid-item {
@@ -32,12 +33,14 @@
     overflow: hidden;
     transition: all 0.3s ease;
     z-index: 1;
+  
+  background-size: cover;
   }
   
   .grid-item.hovered {
-    flex: 3;
+    flex: 15;
     z-index: 2;
-    transform: scale(1.05);
+    transform: scale(1);
     box-shadow: 
       0 5px 15px rgba(0, 0, 0, 0.3),
       0 10px 30px rgba(0, 0, 0, 0.2);
