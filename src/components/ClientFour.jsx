@@ -25,7 +25,7 @@ const ClientFour = () => {
 
 const styles = {
   container: {
-    backgroundColor: 'black',
+  
     color: 'white',
     width: '100vw',
     height: '80vh',

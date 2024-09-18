@@ -5,7 +5,7 @@
   height: 100vh;
   display: grid;
   place-items: center;
-  background: black;
+  background: rgb(46, 41, 41);
   
 }
 
@@ -23,7 +23,7 @@
   display: grid;
   background-color: #ff2212;
   place-items: center;
-  background: black;
+  background: rgb(46, 41, 41);
  
   opacity: 0;
   transform: rotateZ(-90deg);
@@ -39,12 +39,12 @@
   box-shadow: 2px 2px 4px #b1b1b1;
   mask-origin: border-box;
   mask-mode: alpha;
-  mask-image: linear-gradient(to bottom, transparent 70%, rgb(0, 0, 0) 50%),
-    linear-gradient(to top, transparent 20%, rgb(0, 0, 0) 50%);
+  mask-image: linear-gradient(to bottom, transparent 70%, rgb(46, 41, 41) 50%),
+    linear-gradient(to top, transparent 20%, rgb(46, 41, 41) 50%);
   mask-position: center center, calc(1000px * -1) center;
   animation: mask-animation 800ms ease forwards 1s;
   mask-repeat: no-repeat;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(46, 41, 41);
 }
 
 @keyframes mask-animation {

@@ -24,7 +24,7 @@ const ScreenSix = () => {
       { image: image2, color: 'yellow', text: 'Item 5', content: 'Detailed info about Item 5', id: 5, route: '/client-five' },
       { image: image1, color: 'navy', text: 'Item 6', content: 'Detailed info about Item 6', id: 6, route: '/client-six' },
       { image: image4, color: 'purple', text: 'Item 7', content: 'Detailed info about Item 7', id: 7, route: '/client-seven' },
-    
+      
     ];
 
   return (
@@ -44,9 +44,9 @@ const ScreenSix = () => {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                    <Link key={item.id} to={item.route}>
-                <span className="item-text">{item.text}</span>
+                <span className="item-text" >{item.text}</span>
                 <span className="item-new">New</span>
-                <div className="item-content">{item.content}</div>
+                <div className="item-content" style= {{ width: "700px", height: "500px"}}>{item.content}</div>
                 </Link>
               </div>
           

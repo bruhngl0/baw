@@ -66,7 +66,9 @@ const Services = () => {
           </p>
         </motion.div>
       </motion.div>
+    
       <AnimatedServices />
+   
     </>
   );
 };
