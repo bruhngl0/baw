@@ -13,6 +13,7 @@ import MainLayout from './MainLayout';
 import Baw from './Baw';
 import Services from './Services';
 import MaskAnimation from './MaskAnimation';
+import ScreenVideo from './ScreenVideo';
 
 
 
@@ -20,7 +21,7 @@ function Scroll() {
   const [currentScreen, setCurrentScreen] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   
-  const screens = [ScreenOne, MaskAnimation, ScreenSix, ScreenFive];
+  const screens = [ScreenVideo, MaskAnimation, ScreenSix, ScreenFive];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,7 +46,7 @@ function Scroll() {
 
   return (
     <>
-        <Header />
+   
       <div className={`screen-container ${isTransitioning ? 'fade-out' : ''}`}>
         <CurrentScreenComponent />
       </div>

@@ -7,7 +7,12 @@
   font-style: normal;
 }
 
-
+@font-face {
+  font-family: 'schabo';
+  src: url('/font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 @keyframes slideUp {
@@ -28,8 +33,8 @@
     animation: slideUp 0.5s ease-in-out forwards;
     animation-fill-mode: forwards;
     margin-bottom: 0.5rem; /* Add some space between lines */
-    font-family: "ultra";
-    font-size: 100px;
+    font-family: "schabo";
+    font-size: 200px;
   }
   
   /* Larger text elements like "BRANDING" and "BACK" should animate as a block */

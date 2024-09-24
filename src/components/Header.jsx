@@ -4,11 +4,11 @@ const Header = () => {
   return (
     <header className='header'>
         <nav className='header-nav'>
-            <a href="/">TEAM</a>
-            <a href="/screen-six-int">CLIENTS</a>
-            <a href="/baw-studio">BAW STUDIO</a>
-            <a href="/servicess">ARSENAL</a>
-            <a href="/screen-five">CALL UP</a>
+            <a href="/">Team</a>
+            <a href="/screen-six-int">Client</a>
+            <a href="/baw-studio">Arsenal</a>
+            <a href="/servicess">Solve</a>
+            
         </nav>
     </header>
   );
