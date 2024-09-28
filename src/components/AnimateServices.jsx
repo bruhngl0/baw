@@ -22,7 +22,7 @@ const AnimatedServices= () => {
  
   return (
     <div className='main-layout-ani'>
-    <div className='layout-two-static'>WE PROVIDE:</div>
+    <div className='layout-two-static'>WE PROVIDE::</div>
     <div className='layout-two-ani'>
  
       <div className={`image-container-two-ani ani-image-${currentImageIndex}`}> 
