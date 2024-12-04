@@ -23,9 +23,9 @@ const Layout3 = () => {
   return (
     <div className="layout-three">
       <div className={`image-container-three image-${currentImageIndex}`}>
-        <img src="frame7.png" alt="frame1" />
-        <img src="frame8.png" alt="frame2" />
-        <img src="frame9.png" alt="frame3" />
+        <img src="pot7.png" alt="frame1" />
+        <img src="pot8.png" alt="frame2" />
+        <img src="pot9.png" alt="frame3" />
       </div>
     </div>
   );

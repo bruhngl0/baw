@@ -22,9 +22,9 @@ const Layout2 = () => {
   return (
     <div className="layout-two">
       <div className={`image-container-two image-${currentImageIndex}`}>
-        <img src="frame4.png" alt="frame1" />
-        <img src="frame5.png" alt="frame2" />
-        <img src="frame6.png" alt="frame3" />
+        <img src="pot13.png" alt="frame1" />
+        <img src="pot5.png" alt="frame2" />
+        <img src="pot6.png" alt="frame3" />
       </div>
     </div>
   );

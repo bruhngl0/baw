@@ -6,7 +6,7 @@
 }
 
 .header {
-    position: fixed; /* Change from relative to fixed */
+    position: absolute; /* Change from relative to fixed */
     top: 0;
     left: 0;
     width: 100%;
@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    z-index: 1000; /* Increase z-index to ensure it's above other elements */
+    z-index: 10; /* Increase z-index to ensure it's above other elements */
    background-color: transparent;
 }
 
@@ -33,3 +33,13 @@
     z-index: 1; /* Lower z-index than the header */
     padding-top: 80px; /* Adjust based on your header's height */
 }
+
+
+
+
+@media (max-width: 500px) {
+   
+    .header{
+        display: none;
+    }
+  }

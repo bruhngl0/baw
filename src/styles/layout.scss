@@ -3,6 +3,7 @@
     width: 330px; /* Set the width to fit one image */
     overflow: hidden;
     margin: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .image-container {
@@ -12,7 +13,7 @@
   
   .image-container img {
     width: 330px; /* Each image takes up the full width of the container */
-    height: auto; /* Maintain aspect ratio */
+    height: 280px; /* Maintain aspect ratio */
   }
   
   /* CSS classes to handle the right-to-left sliding effect */
@@ -28,3 +29,11 @@
     transform: translateX(-330px); /* Third image slides in from the right */
   }
   
+
+
+  @media (max-width: 500px) {
+   .layout-one{
+    width: 180px
+
+   }
+   }
